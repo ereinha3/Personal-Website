@@ -7,14 +7,14 @@ const Experience = () => {
             <div className="experience-text">
                 <p className="tabbed-paragraph">
                     I've worked with a variety of technologies throughout under-graduate curriculumn, clubs, and personal projects. 
-                    The technologies and languages listed below are in order of relative experience. 
-                    Outside of these, I also have experience with
-                    <a className="inline-link" href="https://leetcode.com/u/ereinha/">dynamic programming</a>, 
-                    <a className="inline-link" href="https://github.com/ereinha3/Operating-Systems/tree/main/Project1">OS management</a>, 
-                    <a className="inline-link" href="https://github.com/ereinha3/Operating-Systems/tree/main/Project3">multi-threading</a>, 
-                    <a className="inline-link" href="https://github.com/ereinha3/Introduction-to-Cryptography">cryptography</a>, 
+                    The technologies and languages below are emphasized in order of experience. 
+                    Outside of these, I also have experience with 
+                    <a className="inline-link" href="https://leetcode.com/u/ereinha/"> dynamic programming</a>, 
+                    <a className="inline-link" href="https://github.com/ereinha3/Operating-Systems/tree/main/Project1"> OS management</a>, 
+                    <a className="inline-link" href="https://github.com/ereinha3/Operating-Systems/tree/main/Project3"> parallelism</a>, 
+                    <a className="inline-link" href="https://github.com/ereinha3/Introduction-to-Cryptography"> cryptography</a>, 
                     many Python libraries including PyTorch, 
-                    <a className="inline-link" href="https://github.com/ereinha3/Watch-Profits-Soar-to-the-Ether">TensorFlow</a>, 
+                    <a className="inline-link" href="https://github.com/ereinha3/Watch-Profits-Soar-to-the-Ether"> TensorFlow</a>, 
                     and a versatile background in Applied Mathematics.
                 </p>
             </div>
@@ -82,9 +82,19 @@ const Experience = () => {
                         <div className="react medium-3D-text">
                             React
                         </div>
-                        <div className="blender small-3D-text">
-                            Blender
+                        <div className="top-[45%] left-[10%] medium-3D-text">
+                            CUDA
                         </div>
+                        <div className="top-[55%] right-[5%] medium-3D-text">
+                            OpenMP
+                        </div>
+                        <div className="top-[75%] right-[35%] large-3D-text">
+                            PyTorch
+                        </div>
+                        <div className="top-[80%] right-[15%] small-3D-text">
+                            MPI
+                        </div>
+                        <div className=""></div>
                     </div>
                 </div>
             </div>

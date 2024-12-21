@@ -1,3 +1,7 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
 :root {
     --navbar-height: 8vh;
     --project-height: 60vh;
@@ -189,13 +193,14 @@ html{
 /* Intro-Container */
 
 .intro-container{
-    margin: 30vh auto 20vh auto;
+    margin: 25vh auto 20vh auto;
     position: relative;
     display: flex;
     flex-direction: column;
     width: 100vw;
     align-items: center;
     justify-content: center;
+    letter-spacing: .1rem;
 }
 
 .my-name-is{
@@ -291,12 +296,13 @@ html{
     text-indent: 2rem;
 }
 
-.front-image, .back-image{
+.front-image, .back-image {
     position: absolute;
     top: 0;
     left: 0;
-    width: 100%;
-    height: auto;
+    width: 100%; /* Fill the width of the div */
+    height: 100%; /* Fill the height of the div */
+    object-fit: cover; /* Ensures the image fills without distortion */
     border-radius: 5%;
     backface-visibility: hidden;
     transition: transform 1s ease, opacity 1s ease;
@@ -481,7 +487,7 @@ html{
     left: 70%;
 }
 
-.blender{
+.mpi{
     top: 80%; 
     left: 60%;
 }
@@ -502,7 +508,6 @@ html{
 }
 
 .project{
-    width: 44%;
     height: 60vh;
     display: flex;
     flex-direction: column;
@@ -556,7 +561,7 @@ html{
       .project-skill {
         background-color: #777;
       }
-      .project-title > p{
+      /* .project-title > p{
         font-size: 2rem;
       }
       .project-description{
@@ -565,15 +570,15 @@ html{
       .project-skill{
         margin: 2% 2%;
         font-size: 1.25rem;
-      }
+      } */
     }
   }
 
-.project:hover{
+/* .project:hover{
     height: 64vh;
     width: 47.5%;
     margin: 0 0;
-}
+} */
 
 .contact-container{
     margin: -10vh 0 5vh 0;

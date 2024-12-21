@@ -1,6 +1,6 @@
 import React from 'react';
 import climbingImg from '../img/climbing.jpeg';
-import drawingImg from '../img/drawing.jpeg';
+import headshot from '../img/ProHeadshot.JPG';
 
 const About = () => {
   return (
@@ -9,22 +9,23 @@ const About = () => {
       <div className="about-content">
         <div className="about-text">
           <p className="tabbed-paragraph">
-            I'm currently a Computer Science and Applied Mathematics third-year student at the University of Oregon.
-            I love learning and am constantly pursuing a new challenge! Aside from my academics, I'm currently working with my co-founder on a start-up,
-            Guppy, a "non-profit" Regulation Crowdfunding Intermediary with all profits channeled directly toward improving higher-education in Oregon.
-            We are still looking for start-up funding so, if this interests you, please reach out!
+            I'm currently an incoming Computer Science Master's student enrolled in the University of Oregon Accelerate Master's program. 
+            I will be starting this program in the upcoming Winter 2025 term. I am also a fourth-year Applied Mathematics student at the University of Oregon. 
+            I am also a proud member of the Alpha Tau Omega Fraternity at University of Oregon.
           </p>
           <p className="tabbed-paragraph">
-            I am additionally looking forward to continuing development on a game that was created over the course of this term for a Game Development class,
-            with the hopes of publishing on Steam. Further, I'm incredibly excited to be working with the Department of Volcanology at University of Oregon to
-            create autonomous software and apply machine learning to prediction problems.
-            Apart from tech, I love creating art, climbing, lifting weights, playing guitar, and hiking. I also love meeting new people!
+            I am looking forward to start research under Professor Yu Wang in the domain of Graph Machine Learning. 
+            Outside of tech, I love expressing my creativity in art and playing guitar. I am passionate about physical fitness and lift weights frequently. 
+            I also enjoy buildering and hiking.
+          </p>
+          <p className="tabbed-paragraph">
+            I love meeting new people and making new connections. 
             If you like what you see or want to learn more, please reach out!
           </p>
         </div>
         <div className="about-image">
-          <img className="front-image" src={climbingImg} alt="Climbing" />
-          <img className="back-image" src={drawingImg} alt="Drawing" />
+          <img className="front-image" src={headshot} alt="Climbing" />
+          <img className="back-image" src={climbingImg} alt="Drawing" />
         </div>
       </div>
     </div>
