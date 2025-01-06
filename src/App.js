@@ -21,7 +21,7 @@ const App = () => {
 
     window.addEventListener('scroll', () => {
         if (window.scrollY > initialMarqueeOffsetTop) {
-            marquee.classList.add("hidden")
+            marquee.classList.add("!text-white")
         }
     });
 

@@ -39,7 +39,9 @@ const Projects = () => {
                         I love working with Generative AI and Graph Machine Learning. 
                         I love improving the effeciency of code I write through parallelism. 
                         I am especially passionate about the intersection of two two: making my models faster through parallelism and hardware optimization.
-                        Aside from these, I have extensive curricular and some extra-curricular projects showing my versatile background below.
+                        Aside from these, I have extensive curricular and some extra-curricular projects showing my versatile background below. 
+                        Listed below are all projects I have determined display a unique skill. I have many more projects on my GitHub that are similar to those presented.
+                        Click any project for more information.
                     </p>
                 </div>
                 <div className="flex space-x-8 mb-6 mt-12">
@@ -85,6 +87,110 @@ const Projects = () => {
                     </button>
                 </div>
                 <div className="grid grid-cols-2 gap-8 mt-12">
+                    
+                    <div className={`${selectedCategory === 'parallelism' || selectedCategory === null ? 'flex' : 'hidden'} w-[100%]`}>
+                        <a className="project" href="https://bitbucket.org/daxs-repo/uoregon-cs431531-f24-group/src/main/">
+                            <div className="project-title">
+                                <p>
+                                    Parallelized N-Body Barnes-Hut Simulation
+                                </p>
+                            </div>
+
+                            <div className="project-description">
+                                N-Body simulations are an embarassingly parallel application. However, runtime still scales quadratically with regard to particle counts. The Barnes-Hut approximation attempts to conserves accuracy while greatly increasing performance. 
+                            </div>
+                            <div className="project-skills">
+                                <div className="project-skill">
+                                    Cuda
+                                </div>
+                                <div className="project-skill">
+                                    OpenMP
+                                </div>
+                                <div className="project-skill">
+                                    Parallelism
+                                </div>
+                                <div className="project-skill">
+                                    C++
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+
+                    <div className={`${selectedCategory === 'machineLearning' || selectedCategory === null ? 'flex' : 'hidden'} w-[100%]`}>
+                        <a className="project" href="https://github.com/ereinha3/CS471-Intro-To-AI/tree/main/reinforcement">
+                            <div className="project-title">
+                                <p>
+                                    Reinforcement Learning on PacMan
+                                </p>
+                            </div>
+
+                            <div className="project-description">
+                                PacMan consists of a finite world with a simple set of rules allowing for machine learning with little computation. I define policies for PacMan as well as use Q-learning to help PacMan eat all the dots and escape the ghosts.
+                            </div>
+                            <div className="project-skills">
+                                <div className="project-skill">
+                                    Q-Learning
+                                </div>
+                                <div className="project-skill">
+                                    Value-Iteration
+                                </div>
+                                <div className="project-skill">
+                                    Python
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+
+                    <div className={`${selectedCategory === 'machineLearning' || selectedCategory === null ? 'flex' : 'hidden'} w-[100%]`}>
+                        <a className="project" href="https://github.com/ereinha3/CS471-Intro-To-AI/tree/main/reinforcement">
+                            <div className="project-title">
+                                <p>
+                                    Performance Comparison of Node Classification over Multiple GNNs
+                                </p>
+                            </div>
+
+                            <div className="project-description">
+                                GNNs (Graph Neural Networks) posses the capabilities to consider graph architecture when making predictions. This is largely due to the label propagation algorithm that seeds classifactions and updates these classifications based on neighboring nodes.
+                            </div>
+                            <div className="project-skills">
+                                <div className="project-skill">
+                                    Q-Learning
+                                </div>
+                                <div className="project-skill">
+                                    Value-Iteration
+                                </div>
+                                <div className="project-skill">
+                                    Python
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+
+                    <div className={`${selectedCategory === 'parallelism' || selectedCategory === null ? 'flex' : 'hidden'} w-[100%]`}>
+                        <a className="project" href="https://github.com/ereinha3/CS431-Intro-to-Parallel-Computing/tree/main/homework03">
+                            <div className="project-title">
+                                <p>
+                                    Parallelized SPMV with OpenMP
+                                </p>
+                            </div>
+
+                            <div className="project-description">
+                                SPMV (Sparse Matrix Vector Multiplication) provides a faster solution to a multiply large sparse (mostly zeros) matrix with a dense (mostly nonzeros) vector.
+                            </div>
+                            <div className="project-skills">
+                                <div className="project-skill">
+                                    SPMV
+                                </div>
+                                <div className="project-skill">
+                                    OpenMP
+                                </div>
+                                <div className="project-skill">
+                                    C++
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+
                     <div className={`${selectedCategory === 'machineLearning' || selectedCategory === null ? 'flex' : 'hidden'} w-[100%]`}>
                         <a className="project" href="https://github.com/ereinha3/Watch-Profits-Soar-to-the-Ether">
                             <div className="project-title">
@@ -99,9 +205,6 @@ const Projects = () => {
                             </div>
                             <div className="project-skills">
                                 <div className="project-skill">
-                                    Machine Learning
-                                </div>
-                                <div className="project-skill">
                                     Python
                                 </div>
                                 <div className="project-skill">
@@ -113,47 +216,10 @@ const Projects = () => {
                                 <div className="project-skill">
                                     Model Optimization
                                 </div>
-                                <div className="project-skill">
-                                    Scientific Writing
-                                </div>
                             </div>
                         </a>
                     </div>
-                    <div className={`${selectedCategory === 'softwareDevelopment' || selectedCategory === null ? 'flex' : 'hidden'}`}>
-                        <a className="project" href="https://play.unity.com/mg/other/webgl-b6o">
-                            <div className="project-title">
-                                <p>
-                                    ChromaCollapse
-                                </p>
-                            </div>
 
-                            <div className="project-description">
-                                This was a project started in CS410: Game Programming, with plans to continue development this summer.
-                                More updates will be provided as development occurs. 
-                                Click to go play!
-                            </div>
-                            <div className="project-skills">
-                                <div className="project-skill">
-                                    Unity
-                                </div>
-                                <div className="project-skill">
-                                    C#
-                                </div>
-                                <div className="project-skill">
-                                    Blender
-                                </div>
-                                <div className="project-skill">
-                                    Linear Algebra
-                                </div>
-                                <div className="project-skill">
-                                    Collaborative Development
-                                </div>
-                                <div className="project-skill">
-                                    Physics
-                                </div>
-                            </div>
-                        </a>
-                    </div>
                     <div className={`${selectedCategory === 'machineLearning' || selectedCategory === null ? 'flex' : 'hidden'}`}>
                         <a className="project" href="https://github.com/ereinha3/Neural-Style-Transfer-Network?tab=readme-ov-file">
                             <div className="project-title">
@@ -173,20 +239,15 @@ const Projects = () => {
                                     Generative AI
                                 </div>
                                 <div className="project-skill">
-                                    Machine Learning
-                                </div>
-                                <div className="project-skill">
                                     TensorFlow
                                 </div>
                                 <div className="project-skill">
                                     Model Optimization
                                 </div>
-                                <div className="project-skill">
-                                    Scientific Writing
-                                </div>
                             </div>
                         </a>
                     </div>
+
                     <div className={`${selectedCategory === 'softwareDevelopment' || selectedCategory === null ? 'flex' : 'hidden'}`}>
                         <a className="project" href="https://github.com/ereinha3/Whats-Up-Dawg">
                             <div className="project-title">
@@ -213,14 +274,12 @@ const Projects = () => {
                                     Model View Controller
                                 </div>
                                 <div className="project-skill">
-                                    GUI Design
-                                </div>
-                                <div className="project-skill">
                                     Database Management
                                 </div>
                             </div>
                         </a>
                     </div>
+
                     <div className={`${selectedCategory === 'softwareDevelopment' || selectedCategory === null ? 'flex' : 'hidden'}`}>
                         <a href="https://github.com/ereinha3/ereinha3.github.io" className="project">
                             <div className="project-title">
@@ -244,12 +303,10 @@ const Projects = () => {
                                 <div className="project-skill">
                                     JavaScript
                                 </div>
-                                <div className="project-skill">
-                                    Web Design
-                                </div>
                             </div>
                         </a>
                     </div>
+
                     <div className={`${selectedCategory === 'parallelism' || selectedCategory === null ? 'flex' : 'hidden'}`}>
                         <a href="https://github.com/ereinha3/Operating-Systems/tree/main/Project3" className="project">
                             <div className="project-title">
@@ -272,17 +329,12 @@ const Projects = () => {
                                     File IO
                                 </div>
                                 <div className="project-skill">
-                                    Debugging
-                                </div>
-                                <div className="project-skill">
-                                    Web Design
-                                </div>
-                                <div className="project-skill">
                                     Resource Management
                                 </div>
                             </div>
                         </a>
                     </div>
+
                     <div className={`${selectedCategory === 'softwareDevelopment' || selectedCategory === null ? 'flex' : 'hidden'}`}>
                         <a href="https://github.com/ereinha3/Easy-A" className="project">
                             <div className="project-title">
@@ -305,17 +357,12 @@ const Projects = () => {
                                     Tkinter
                                 </div>
                                 <div className="project-skill">
-                                    GUI Design
-                                </div>
-                                <div className="project-skill">
-                                    File Processing
-                                </div>
-                                <div className="project-skill">
                                     Database Management
                                 </div>
                             </div>
                         </a>
                     </div>
+
                     <div className={`${selectedCategory === 'softwareDevelopment' || selectedCategory === null ? 'flex' : 'hidden'}`}>
                         <a href="https://github.com/ereinha3/Characteristic-Analysis-of-Randomly-Generate-Polynomials" className="project">
                             <div className="project-title">
@@ -343,6 +390,34 @@ const Projects = () => {
                             </div>
                         </a>
                     </div>
+
+                    <div className={`${selectedCategory === 'softwareDevelopment' || selectedCategory === null ? 'flex' : 'hidden'}`}>
+                        <a className="project" href="https://play.unity.com/mg/other/webgl-b6o">
+                            <div className="project-title">
+                                <p>
+                                    ChromaCollapse
+                                </p>
+                            </div>
+
+                            <div className="project-description">
+                                This was a project started in CS410: Game Programming, with plans to continue development this summer.
+                                More updates will be provided as development occurs. 
+                                Click to go play!
+                            </div>
+                            <div className="project-skills">
+                                <div className="project-skill">
+                                    Unity
+                                </div>
+                                <div className="project-skill">
+                                    C#
+                                </div>
+                                <div className="project-skill">
+                                    GitHub
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                    
                 </div>
             </div>
         </div>
