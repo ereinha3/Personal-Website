@@ -24,8 +24,8 @@ const About = () => {
           </p>
         </div>
         <div className="about-image">
-          <img className="front-image" src={headshot} alt="Climbing" />
-          <img className="back-image" src={climbingImg} alt="Drawing" />
+          <img className="front-image" src={headshot} alt="Headshot" />
+          <img className="back-image" src={climbingImg} alt="Climbing" />
         </div>
       </div>
     </div>
