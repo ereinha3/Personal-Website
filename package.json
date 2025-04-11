@@ -2,6 +2,7 @@
   "name": "new-portfolio",
   "version": "0.1.0",
   "private": true,
+  "homepage": "/",
   "dependencies": {
     "@testing-library/jest-dom": "^5.17.0",
     "@testing-library/react": "^13.4.0",
@@ -14,9 +15,12 @@
   },
   "scripts": {
     "start": "react-scripts start",
-    "build": "react-scripts build",
+    "build": "CI=false react-scripts build",
     "test": "react-scripts test",
-    "eject": "react-scripts eject"
+    "eject": "react-scripts eject",
+    "vercel-build": "CI=false npm run build",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build"
   },
   "eslintConfig": {
     "extends": [
@@ -37,12 +41,14 @@
     ]
   },
   "devDependencies": {
-    "ajv": "^8.17.1",
+    "ajv": "^8.12.0",
     "ajv-keywords": "^5.1.0",
     "autoprefixer": "^10.4.20",
-    "fs-extra": "^11.3.0",
+    "gh-pages": "^6.3.0",
     "postcss": "^8.4.49",
-    "tailwindcss": "^3.4.17"
+    "tailwindcss": "^3.4.17",
+    "webpack": "^5.89.0",
+    "webpack-cli": "^5.1.4"
   },
   "engines": {
     "node": "20.x"
