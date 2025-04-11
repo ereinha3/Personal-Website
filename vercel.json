@@ -5,8 +5,7 @@
       "src": "package.json",
       "use": "@vercel/static-build",
       "config": {
-        "distDir": "build",
-        "buildCommand": "export NODE_OPTIONS=--openssl-legacy-provider && npm run build"
+        "distDir": "build"
       }
     }
   ],
